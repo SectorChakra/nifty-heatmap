@@ -2,12 +2,12 @@
 
 Builds the **APK** for direct installs. The Google Play build (AAB) lives in the
 private `nifty-heatmap-play` repo; both are built from the shared
-[`nifty-heatmap-android-shell`](https://github.com/abhijeetbishayee-drb/nifty-heatmap-android-shell)
+[`nifty-heatmap-android-shell`](https://github.com/sectorchakra/nifty-heatmap-android-shell)
 submodule, so the two apps can't drift.
 
 The app shows the live web boards — Nifty 50, F&O Sectors, RRG (Beta), plus the
 Rollover / PCR / 44 EMA boards — from
-https://abhijeetbishayee-drb.github.io/nifty-heatmap-web/. A change to the website
+https://sectorchakra.github.io/nifty-heatmap-web/. A change to the website
 reaches the app without a new release.
 
 | | |
@@ -43,6 +43,6 @@ The Kivy code is in git history (last Kivy commit: `9dda9f0`).
 ## Local build
 
 ```bash
-git clone --recurse-submodules https://github.com/abhijeetbishayee-drb/nifty-heatmap.git
+git clone --recurse-submodules https://github.com/sectorchakra/nifty-heatmap.git
 cd nifty-heatmap && ./gradlew :app:assembleDebug     # needs JDK 17+ and the Android SDK
 ```
